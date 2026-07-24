@@ -1,5 +1,5 @@
 # esirgeyen ve bağışlayan ❤️ Allah'ın (c.c) adıyla - 12
-This is a React fundamentals notes focused on flow of the react app, commands, technology stack used in react, files and folder structure, testing and mobile (React Native)
+This is a React fundamentals notes focused on flow of the react app, commands, technology stack used in react, files and folder structure, testing and CLI
 ## sections
 - [1_background](#1_background)
     - [spa](#spa)
@@ -9,13 +9,12 @@ This is a React fundamentals notes focused on flow of the react app, commands, t
     - [async_operations](#async_operations)
     - [thinking_in_components](#thinking_in_components)
     - [custom_components](#custom_components)
-    - [keywords](#keywords)
 - [3_setup](#3_setup)
     - [1_CRA_depreciated](#1_CRA_depreciated)
         - [why_do_not_use](#why_do_not_use)
     - [2_vite](#2_vite)
         - [setup_Vite_project](#setup_Vite_project)
-        - [run_Vite_project](#run_Vite_project)
+        - [Start the development server](#start-the-development-server)
     - [3_full_stack_react_framework_setup](#3_full_stack_react_framework_setup)
 - [4_project_folder_structure](#4_project_folder_structure)
     - [app_jsx](#app_jsx)
@@ -25,7 +24,10 @@ This is a React fundamentals notes focused on flow of the react app, commands, t
 - [6_TDD](#6_TDD)
     - [description](#description)
     - [install_configuration](#install_configuration)
-- [7_keywords](#7_keywords)
+    - [Adding New Tests](#adding-new-tests)
+    - [categories_of_query_types](#categories_of_query_types)
+- [7-CLI](#7-CLI)    
+- [keywords](#keywords)
 
 ## 1_background
 ### SPA
@@ -77,7 +79,7 @@ then wait for the new data to arrive and incorporate it and re-render only the r
 - React functional component in `App.jsx returns JSX`,` which describes the UI React should render.  In our App component, it returns:
 
     - A React fragment: <>...</>
-    - Several HTML-like elements such as <section>, <div>, <h1>, <button>, and <img>
+    - Several HTML-like elements such as `<section>, <div>, <h1>, <button>, and <img>`
     - Dynamic values such as {count}
     - Event behavior such as onClick
 
@@ -118,11 +120,11 @@ This will create our React project folder in the directory with two dependencies
     "react-dom": "^19.2.7"
   },
 ```   
-#### run_Vite_project
+#### Start the development server
 - `npm run dev`
 - http://localhost:5173/ 
 - ![image](imgs/3_setup/run_Vite_project.png)
-
+- ![image](imgs/3_setup/intellij_npm_run_dev.png)
 
 ### 3_full_stack_react_framework_setup
 `npx create-next-app@latest`
@@ -192,28 +194,73 @@ When we build a `user interface with React`,
 
 - A good fit is `Vitest` with `React Testing Library`: Vitest runs naturally with Vite, while Testing Library verifies what users see rather than implementation details. 
 
+![image](imgs/6_TDD/apptest_jsx_example.png)
+
 ### install_configuration
 - 1- adding the test dependencies
 `npm install -D vitest jsdom @testing-library/react @testing-library/jest-dom`
 ![image](imgs/6_TDD/adding_test_dependency_vitest.png)
 - 2- configuration
 ![image](imgs/6_TDD/configuration.png)
+- 3- `npm test`
+
+### Adding New Tests
+Create a new `*.test.jsx` file in the `src` directory and follow this pattern:
+```jsx
+import { render, screen } from '@testing-library/react'
+import { describe, expect, it } from 'vitest'
+import Component from './Component'
+
+describe('Component', () => {
+  it('should render something', () => {
+    render(<Component />)
+    expect(screen.getByText('text')).toBeInTheDocument()
+  })
+})
+```
+- ### screen
+![image](imgs/6_TDD/screen.png)
+
+### categories_of_query_types
+![image](imgs/6_TDD/categories_of_query_types.png)
+
+## 7-CLI
+<!-- I'm setting up a GitHub Actions workflow that will automatically run tests, lint, and build your app on every push and pull request.
+
+GitHub Actions workflow created at .github/workflows/ci.yml. The workflow:
+
+Triggers on:
+
+Push to main or develop branches
+Pull requests targeting those branches
+Runs on: Ubuntu with Node.js 18.x and 20.x (matrix testing)
+
+Steps:
+
+Checkout - Clones your code
+Setup Node - Installs Node with dependency caching
+Lint - Runs npm run lint (Oxlint)
+Test - Runs npm run test:run (Vitest)
+Build - Runs npm run build
+Verify - Checks that the dist folder was created
+Next steps:
+
+Push this file to GitHub
+Go to your repository's Actions tab to view workflow runs
+All future commits will trigger this CI pipeline automatically
+You can customize the workflow further by:
+
+Changing which branches trigger it
+Adding code coverage reporting
+Deploying to GitHub Pages with an additional step
+Sending notifications on failure -->
 
 
 
-<!-- ### 1_CRA_depreciated
-- by using a combination of RTL `React Testing Library` and `Jest (https://jestjs.io/)`
 
-#### 1.1_unit_tests
-- Initial test passing.
-![image](imgs/depreciated_testing_library_jest_unit_test_example.png)
 
-- the goal is to verify that each unit of our application, considered in isolation, is working correctly.
-An example would be testing that a particular function returns an expected value, give some known inputs.
 
-#### 1.2_functional_tests
-- verify that the system meets its functional specification. -->
-## 7_keywords
+## Keywords
 - ES6 features, 
 - virtual DOM, 
 - React canvas,
