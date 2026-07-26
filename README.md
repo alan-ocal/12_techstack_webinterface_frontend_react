@@ -25,8 +25,9 @@ This is a React fundamentals notes focused on flow of the react app, commands, t
     - [description](#description)
     - [install_configuration](#install_configuration)
     - [Adding New Tests](#adding-new-tests)
+    - [screen](#screen)
     - [categories_of_query_types](#categories_of_query_types)
-- [7-CLI](#7-CLI)    
+- [7-CLI_Jenkins](#7-CLI_Jenkins)    
 - [keywords](#keywords)
 
 ## 1_background
@@ -220,44 +221,12 @@ describe('Component', () => {
 ```
 - ### screen
 ![image](imgs/6_TDD/screen.png)
+![image](imgs/6_TDD/render.png)
 
 ### categories_of_query_types
 ![image](imgs/6_TDD/categories_of_query_types.png)
 
-## 7-CLI
-<!-- I'm setting up a GitHub Actions workflow that will automatically run tests, lint, and build your app on every push and pull request.
-
-GitHub Actions workflow created at .github/workflows/ci.yml. The workflow:
-
-Triggers on:
-
-Push to main or develop branches
-Pull requests targeting those branches
-Runs on: Ubuntu with Node.js 18.x and 20.x (matrix testing)
-
-Steps:
-
-Checkout - Clones your code
-Setup Node - Installs Node with dependency caching
-Lint - Runs npm run lint (Oxlint)
-Test - Runs npm run test:run (Vitest)
-Build - Runs npm run build
-Verify - Checks that the dist folder was created
-Next steps:
-
-Push this file to GitHub
-Go to your repository's Actions tab to view workflow runs
-All future commits will trigger this CI pipeline automatically
-You can customize the workflow further by:
-
-Changing which branches trigger it
-Adding code coverage reporting
-Deploying to GitHub Pages with an additional step
-Sending notifications on failure -->
-
-
-
-
+## 7-CLI_Jenkins
 
 
 ## Keywords
