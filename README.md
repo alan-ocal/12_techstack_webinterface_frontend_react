@@ -27,8 +27,13 @@ This is a React fundamentals notes focused on flow of the react app, commands, t
     - [Adding New Tests](#adding-new-tests)
     - [screen](#screen)
     - [categories_of_query_types](#categories_of_query_types)
-- [7-CLI_Jenkins](#7-CLI_Jenkins)    
+- [7_Bindings_Props_State_and_Events](#7_bindings_props_state_and_events)  
+    - [state](#state)
+- [8-CLI_Jenkins](#8-CLI_Jenkins)    
 - [keywords](#keywords)
+
+
+
 
 ## 1_background
 ### SPA
@@ -108,7 +113,8 @@ CRA has several drawbacks compared to newer tooling:
 
 - Prefer kebab-case (my-app) for the project/package name — it’s the most compatible convention.
 
-`npm create vite@latest crud-operations-app`
+- `npm create vite@latest crud-operations-app`
+
 - ✔ Select a framework: React
 ![image](imgs/3_setup/framework.png)
 - ✔ Select a variant: JavaScript (or TypeScript)
@@ -188,7 +194,10 @@ function App() {
 When we build a `user interface with React`,
 - 1- first, break it apart into pieces called `components`. 
 - 2- then, describe the different `visual states for each of the components`
-- 3- <span style="color: magenta;">tbc. </span>
+- 3- adding components 
+
+
+
 ## 6_TDD
 ### description
 - TDD in React uses the `Red–Green–Refactor` cycle applied to `components, hooks, and interactions` — we write a test that expresses the desired behavior before writing the `component code`, implement the minimal code to make the test pass, then refactor with confidence
@@ -226,7 +235,18 @@ describe('Component', () => {
 ### categories_of_query_types
 ![image](imgs/6_TDD/categories_of_query_types.png)
 
-## 7-CLI_Jenkins
+## 7_Bindings_Props_State_and_Events 
+
+### State
+- `State` is like a component’s memory. It lets a component keep track of some information and change it in response to interactions. For example, a Button might keep track of isHovered state. State is reserved only for interactivity, that is, `data that changes over time`
+- React provides a special function called `useState` that we can call from our component to let it “remember” things.
+- `useState` is used for fetching and displaying data
+- `useState` stores data that affects rendering.
+
+
+
+
+## 8-CLI_Jenkins
 
 
 ## Keywords
