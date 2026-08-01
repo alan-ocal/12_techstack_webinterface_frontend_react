@@ -6,7 +6,6 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
 
   return (
-
       <div className="container">
         <h1>Conditional Operator Example</h1>
         <h2>
