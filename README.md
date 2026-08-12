@@ -1,16 +1,18 @@
-# React + Vite
+# Virtual DOM
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A small React application built with Vite that displays the React logo and provides a link to the associated Figma design.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19 app bootstrapped with Vite
+- Simple UI showcasing the project entry point
+- External link to the Figma design system
 
-## React Compiler
+## Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `index.html` — Vite entry HTML file
+- `src/main.jsx` — React application bootstrap
+- `src/App.jsx` — Main application component
+- `src/App.css` — App-specific styling
+- `src/assets/` — Static assets used by the app
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
