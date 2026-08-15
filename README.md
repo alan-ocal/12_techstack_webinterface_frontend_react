@@ -280,10 +280,10 @@ describe('Component', () => {
 
 ![props](imgs/7_Bindings_Props_State_and_Events/prop_example.png)
 -button to be reusable with different styles, by making it accept a `className prop`:
-[props](imgs/7_Bindings_Props_State_and_Events/prop_example2.png)
-[props](imgs/7_Bindings_Props_State_and_Events/prop_example3_flow.png)
-[props](imgs/7_Bindings_Props_State_and_Events/prop_example4_flow.png)
-[props](imgs/7_Bindings_Props_State_and_Events/prop_example5.png)
+![props](imgs/7_Bindings_Props_State_and_Events/prop_example2.png)
+![props](imgs/7_Bindings_Props_State_and_Events/prop_example3_flow.png)
+![props](imgs/7_Bindings_Props_State_and_Events/prop_example4_flow.png)
+![props](imgs/7_Bindings_Props_State_and_Events/prop_example5.png)
 
 
 - **data exchange fostered through props**
