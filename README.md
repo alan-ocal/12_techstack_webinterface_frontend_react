@@ -278,12 +278,12 @@ describe('Component', () => {
 ### Props
 - `Props` are like arguments we pass to a function. They let a parent component pass data to a child component and customize its appearance. For example, a Form can pass a color prop to a Button.
 
-![props](imgs/7_Bindings_Props_State_and_Events/prop_example.png)
+![props](imgs/7_bindings_props_state_and_events/prop_example.png)
 -button to be reusable with different styles, by making it accept a `className prop`:
-![props](imgs/7_Bindings_Props_State_and_Events/prop_example2.png)
-![props](imgs/7_Bindings_Props_State_and_Events/prop_example3_flow.png)
-![props](imgs/7_Bindings_Props_State_and_Events/prop_example4_flow.png)
-![props](imgs/7_Bindings_Props_State_and_Events/prop_example5.png)
+![props](imgs/7_bindings_props_state_and_events/prop_example2.png)
+![props](imgs/7_bindings_props_state_and_events/prop_example3_flow.png)
+![props](imgs/7_bindings_props_state_and_events/prop_example4_flow.png)
+![props](imgs/7_bindings_props_state_and_events/prop_example5.png)
 
 
 - **data exchange fostered through props**
@@ -298,7 +298,7 @@ const [count, setCount] = useState(0);
 ```
 - `State` is like a component’s memory. It lets a component keep track of some information and change it in response to interactions.
  For example, a Button might keep track of `isHovered state`. State is reserved only for interactivity, that is, `data that changes over time`
-[state](imgs/7_Bindings_Props_State_and_Events/prop_example6.png)
+[state](imgs/7_bindings_props_state_and_events/prop_example6.png)
 
 ### Hooks
 - Functions starting with `use are called Hooks`. `useState` is a built-in Hook provided by React
