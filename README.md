@@ -20,7 +20,7 @@ This is a React fundamentals notes focused on flow of the react app, commands, t
         - [setup_Vite_project_with_Intellij](#setup_Vite_project_with_Intellij)
         - [Start the development server](#start-the-development-server)
     - [3_full_stack_react_framework_setup](#3_full_stack_react_framework_setup)
-- [4_Project Folder Structure](#4_Project-Folder-Structure)
+- [4_Project Structure](#4_Project-Structure)
     - [standard_subdirectories_to_create](#standard_subdirectories_to_create)
     - [files to create](#files_to_create)
         - [app_jsx](#app_jsx)
@@ -155,7 +155,7 @@ This will create our React project folder in the directory with two dependencies
 ![image](imgs/3_setup/full_stack_react_framework_setup.png)
 <!--###############################-->
 
-## 4_Project Folder Structure 
+## 4_Project Structure 
 In React, `organizing the src folder with subdirectories` is a standard practice to keep code maintainable as the project grows. While there is no "official" mandatory structure, several industry-standard patterns exist for grouping files. 
 
 ### standard_subdirectories_to_create
