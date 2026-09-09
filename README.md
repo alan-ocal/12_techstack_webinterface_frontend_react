@@ -1,5 +1,3 @@
-# esirgeyen ve bağışlayan ❤️ Allah'ın (c.c) adıyla - 12b_greg_lim_book_beginning_react
-
 ## Table of Contents
 - [Description](#description)
 - [Prerequisites](#prerequisites)
