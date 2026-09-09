@@ -1,4 +1,3 @@
-# esirgeyen ve bağışlayan ❤️ Allah'ın (c.c) adıyla - 12a_react_official 
 ## Table of Contents
 * [Description](#description)
 
