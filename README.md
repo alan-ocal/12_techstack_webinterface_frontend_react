@@ -1,5 +1,3 @@
-# esirgeyen ve bağışlayan ❤️ Allah'ın (c.c) adıyla - 12c_serb_alan_ocal_hayirlisi_css-class-binding-tdd
-
 ## Table of Contents
 * [Description](#description)
   * [Button component](#button-component)
