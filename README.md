@@ -1,4 +1,3 @@
-# esirgeyen ve bağışlayan ❤️ Allah'ın (c.c) adıyla - 12b_greg_limm
 ## Initial Application
 - `Components`: App is the parent; Rating is the child
 - ![image](imgs/Initial_Application/Data_flow.png)
