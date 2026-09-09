@@ -1,4 +1,3 @@
-# esirgeyen ve bağışlayan ❤️ Allah'ın (c.c) adıyla - 12
 This is a React fundamentals notes focused on flow of the react app, commands, technology stack used in react, files and folder structure, testing and CLI
 
 ## Table of Contents
